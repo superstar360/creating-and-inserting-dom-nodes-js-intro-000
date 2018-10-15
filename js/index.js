@@ -8,3 +8,19 @@ element.style.backgroundColor = '#f9f9f9';
 document.body.appendChild(element);
 
 element.style.textAlign = 'center';
+
+var ul = document.createElement('ul');
+
+for (let i = 0; i < 3; i++) {
+  let li = document.createElement('li');
+  li.innerHTML = (i + 1).toString();
+  ul.appendChild(li);
+}
+
+element.appendChild(ul);
+
+
+//Hm, that looks a bit ugly. Let's fix it
+
+//javascript
+ul.style.textAlign = 'left';
